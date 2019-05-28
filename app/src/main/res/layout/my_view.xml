@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingTop="30dp"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Question 1"
+                android:clickable="false"
+                android:background="@color/bgColor1"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5 points"
+                android:clickable="false"
+                android:id="@+id/btnNote"
+                android:background="@color/bgColor2"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Moyen"
+                android:id="@+id/btnDiff"
+                android:clickable="false"
+                android:background="@color/bgColor3"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ici la question du question numero de nimporte quoi juste pour la forme du dossier parent olala"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:id="@+id/tvQuestion"
+            />
+
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingRight="5dp"
+                android:text="Reponse une"
+                android:id="@+id/btnReponse1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="5dp"
+                android:text="Reponse deux"
+                android:id="@+id/btnReponse2"
+                android:background="@drawable/answer_button"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reponse trois"
+                android:id="@+id/btnReponse3"
+                android:background="@drawable/answer_button"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reponse quatre"
+                android:id="@+id/btnReponse4"
+                android:background="@drawable/answer_button"
+                />
+
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/next"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+
+</LinearLayout>

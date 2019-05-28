@@ -1,0 +1,642 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backscroll"
+    tools:context="com.sim.treasity.fragment.LoiOhmFragment">
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/loi_ohm_view">
+            <TextView
+                android:text="Loi d'ohm"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:text="@string/descriptionOhm"
+                android:padding="15dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:paddingLeft="10dp"
+                android:text="Les trois éléments sont représentés par les lettres U, R et I:"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="30dp"
+                android:text="• U : tension aux bornes de la résistance, exprimée en volt (symbole : V)."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="30dp"
+                android:text="• R : valeur de la résistance, exprimée en ohm (symbole : symbole ohm)."
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="30dp"
+                android:text="• I : courant qui traverse la résistance, exprimé en Ampère (symbole : A)."
+                />
+
+
+
+            <TextView
+                android:text="Formules"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:paddingLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold|italic">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="L'image ci-jointe représente un dipôle (ici une résistance) parcourue par un courant électrique. La résistance électrique (R) n'est autre que le rectangle noir, le courant (I) est représenté en rouge et la différence de potentiel (V) est en vert."
+                android:textSize="15dp"
+                android:padding="10dp"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cours_ohm_1"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Pour le montage ci-dessus, la formule de la loi d'Ohm est :"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="U = R x I "
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="A noter que cette dernière formule peut s'écrire en fonction du courant :"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I = U / R"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Ou alors on peut l'écrire en fonction de la résistance :"
+                android:layout_marginTop="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R = U / I"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                />
+
+
+
+                    <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                    android:text="Exemples"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calculer la tension"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingLeft="20dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pour calculer la tension électrique aux bornes d'une résistance de 1ksymbole ohm qui est traversé par un courant de 12mA, il faut effectuer le calcul suivant:"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:text="U = R*I = 1000*0.012 = 12V"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:text="La tension aux bornes d'une telle résistance sera donc de 12V."
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calculer le courant"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingLeft="20dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Le calcul à effectuer pour déterminer le courant qui traverse une résistance de 3ksymbole ohm et qui est soumisse à une tension de 5V est le suivante:"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:text="I = U/R = 5/3000 = 0.001666A"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:text="Le courant calculé pour cet exemple est égal à 1.66mA."
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Calculer la résistance"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:paddingLeft="20dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Il est possible de calculer la valeur d'une résistance en connaissant la tension à ses bornes et le courant qui la traverse. Dans le cas d'une différence de potentiel de 9V et d'un courant de 2.25mA, le calcul à effectuer est le suivant:"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:text="R = U/I = 9/(2.25*10^-3) = 4000 Ohms"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:paddingLeft="30dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="La valeur de résistance sera de 4ksymbole ohm pour cet exemple."
+                        />
+
+                </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/loi_kirchhoff_view"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/titre_cours"
+            android:text="Lois de Kirchhoff"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+       <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+<!--
+                <TextView
+                    android:text="@string/descriptionKirchoff"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </TextView>
+
+           -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:paddingLeft="10dp"
+                    android:text="Les deux lois de Kirchhoff sont :"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="30dp"
+                    android:text="• La loi des noeuds"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="30dp"
+                    android:text="• La loi des mailles"
+                    />
+
+       <!--
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="L'objectif de ces lois consiste à exprimer mathématiquement la conservation de l'énergie dans un circuit électrique. La loi des noeuds et la loi des mailles sont simple à comprendre et font parties des notions fondamentales à connaitre en électronique, au même titre que la loi d'Ohm."
+                    />
+-->
+
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:text="Loi des noeuds"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:paddingLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold|italic">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cette loi importante dans le domaine électrique stipule que « la somme algébrique des intensités des courants qui entrent par un noeud est égale à la somme algébrique des intensités des courants qui en sortent ». Cela signifie que si dans un noeud la somme des intensités électrique entrantes est égale à 20 Ampères, alors la somme des intensités électrique sortantes sera obligatoirement égale à 20 Ampères également."
+                    android:textSize="15dp"
+                    android:padding="10dp"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/loi_des_noeuds"
+                    />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="20dp"
+                       android:textSize="20sp"
+                       android:paddingLeft="10dp"
+                       android:text="Le schéma ci-dessus représente un schéma électrique qui illustre à merveille la loi des noeuds. Le sens des courants de ce schéma est donné au hasard. On y retrouve 4 courants :"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:paddingLeft="30dp"
+                       android:text="• I1 qui sort du noeud"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:paddingLeft="30dp"
+                       android:text="• I2 qui entre dans le noeud"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:paddingLeft="30dp"
+                       android:text="• I3 qui entre dans le noeud"
+                       />
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:paddingLeft="30dp"
+                       android:text="• I4 qui sort du noeud"
+                       />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="A l'aide de la loi cité plus haut, il est possible d'en déduire la formule suivante :"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="i1 + i4 = i2 + i3"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:text="Loi des mailles"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:paddingLeft="10dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="La loi des mailles est la deuxième loi de Kirchhoff. Cette loi n'est pas plus compliquée mais demande de la rigueur pour éviter les erreurs d'étourderies. Cette loi stipule que « dans une maille d'un réseau électrique, la somme des tensions le long de cette maille est toujours nulle ». En d'autres termes, si on fait le tour d'une maille et que l'ont additionne toutes les tensions de celle-ci (en faisant attention au sens), la somme sera égale à zéro."
+                    android:textSize="15sp"
+                    android:paddingLeft="20dp"
+                    />
+                 <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="50dp"
+                   android:text="Schéma"
+                   android:textColor="@color/black"
+                   android:textSize="30sp"
+                   android:paddingLeft="10dp"
+                   />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="30dp"
+                    android:text="Le schéma ci-dessous représente un circuit électrique fermé. Les différences de potentiel, aussi appelé tension, sont représenté en vert. La boucle rouge représente le sens dans lequel seront listées les tensions."
+                    />
+
+                   <ImageView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:src="@drawable/loi_des_mailles"
+                       />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:paddingLeft="30dp"
+                    android:text="En suivant la boucle rouge et en faisant attention au sens, les tensions peuvent être listées comme ceci :"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(+V1) + (-V2) + (-V3) + (-V4) = 0"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingLeft="20dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="L'équation ci-dessous utilise un signe positif lorsque la différence de potentiel est dans le même sens que la boucle en rouge. De même, les tensions qui sont dans le sens opposés à la boucle en rouge sont ajoutées avec un signe négatif. De ce fait, la formule peut aussi être présentée comme ceci:"
+                    android:textSize="15sp"
+                    android:paddingLeft="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:paddingLeft="30dp"
+                    android:text="V1 - V2 - V3 - V4 = 0"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="30dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/loi_condensateur_view"
+            android:padding="10dp"
+            >
+            <TextView
+                android:text="Condensateur"
+                android:textColor="@color/black"
+                android:textSize="50sp"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Le condensateur est un composant en électronique qui à la particularité de pouvoir stocker de l'énergie lorsqu'il est soumis à une tension. Ce composant est primordial dans le domaine de l'électricité, il est presque aussi fréquent que la résistance."
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Le condensateur se charge d'une quantité d'électricité (Q) lorsqu'il est soumis à une tension. Cette charge Q dépent de la tension et de la durée auquel il a été soumis à cette tension. L'énergie emmagasinée sera restituée lors de la décharge du condensateur."
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/condensateur_cours"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Ce composant est un dipôle (consistué de 2 pôles) composé de 2 armatures conductrices séparées par un isolant dit 'diélectrique'. Il existe plusieurs sortes de condensateurs qui diffèrent selon la nature des plaques conductrices et de l'isolant (air, céramique, mica ...)."
+                />
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Schéma électrique"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Sur un schéma électrique, le symbole du condensateur est reconnaisable par 2 traits parallèles qui représentent les 2 armatures conductrices:"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/condensateur_symbole"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Caractéristiques électriques"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="La capacité d'un condensateur est exprimé en Farad. De manière mathématique, pour calculer la valeure de la capacité il faut utiliser l'équation suivante:"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:text="C = Q/U"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Les constantes de cette équation sont les suivantes :"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="• C : capacité du condensateur en Farads (F)"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="• Q : charge du condensateur en Coulombs (C)"
+                android:textStyle="italic"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="• U : tension aux bornes du condensateur en Volts (V)"
+                android:textStyle="italic"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Utilisation"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="L'utilisation basique d'un condensateur consiste à le brancher en série avec une résistance et une source d'alimentation."/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/condensateur_symbole2"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Lorsque ce condensateur est soumis à la tension du générateur, la charge du condensateur décrit une courbe non-linéaire. Cette courbe ressemble au graphique ci-dessous:"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/condensateur_symbole3"
+                />
+
+        </LinearLayout>
+    </ViewFlipper>
+
+</ScrollView>

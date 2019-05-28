@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/grid"
+            android:title="Menu principal" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/comments"
+            android:title="Forum" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/testquiz"
+            android:title="QUIZ" />
+        <item
+            android:id="@+id/nav_cours"
+            android:icon="@drawable/write_board"
+            android:title="Cours" />
+        <item
+            android:id="@+id/nav_dicos"
+            android:icon="@drawable/dictionary"
+            android:title="DICTIONNAIRE ANG-FR" />
+        <item
+            android:id="@+id/nav_map"
+            android:icon="@drawable/map"
+            android:title="MAGAZIN A PROXIMITE" />
+
+
+    </group>
+
+    <item android:title="Compte">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_manage"
+                android:icon="@drawable/user"
+                android:title="Profil" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout_2"
+                android:title="Déconnexion" />
+
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

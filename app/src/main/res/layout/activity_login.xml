@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sim.treasity.LoginActivity"
+    android:background="#ECECEC">
+
+
+    <ImageView
+        android:id="@+id/profile_images"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logocopy"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/back"
+        android:id="@+id/back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        tools:mockup_opacity="20"
+        android:alpha="0.15"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1"
+        android:layout_marginBottom="52dp"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <EditText
+            android:id="@+id/et_lnmobioe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:hint="Pseudo"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+
+        <EditText
+            android:id="@+id/et_lnpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:imeOptions="actionDone"
+            android:hint="Mot de passe"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
+
+
+        <CheckBox
+            android:id="@+id/show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="Afficher le mot de passe"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_login"
+            android:text="Se connecter"
+            android:background="@color/colorbtn"
+            android:textColor="@color/white_greyish"
+            android:onClick="login"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_signuphere"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="20dp"
+            android:text="New User!! Signup Here"
+            android:gravity="center"
+            android:textColor="@color/white_greyish" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorbtn"
+        android:onClick="signupAction"
+        android:text="S'inscrire"
+        android:textColor="@color/white_greyish" />
+
+</RelativeLayout>

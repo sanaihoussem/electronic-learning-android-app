@@ -1,0 +1,274 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragment_result"
+    tools:context="com.sim.treasity.fragment.ResultFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Félications"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score: 16 points"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/tvScore"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Votre statistiques"
+            android:textStyle="italic|bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/resissss"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBarQ1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:max="20"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:progress="5"
+                android:layout_marginRight="13dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:text="Refaire"
+                android:id="@+id/redoQ1"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/ohm"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBarQ2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:max="20"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:progress="10"
+                android:layout_marginRight="13dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:text="Refaire"
+                android:id="@+id/redoQ2"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/condensateur"
+                />
+
+            <ProgressBar
+                android:id="@+id/progressBarQ3"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:max="20"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:progress="18"
+                android:layout_marginRight="13dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:text="Refaire"
+                android:id="@+id/redoQ3"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/transformateur"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarQ4"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:max="20"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:progress="2"
+                android:layout_marginRight="13dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:text="Refaire"
+                android:id="@+id/redoQ4"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:src="@drawable/tension"/>
+
+            <ProgressBar
+                android:id="@+id/progressBarQ5"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:max="20"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:progress="15"
+                android:layout_marginRight="13dp"
+                />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/buttonshape"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="bottom"
+                android:text="Refaire"
+                android:id="@+id/redoQ5"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:text="Accueil"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/buttonshape"
+                android:id="@+id/btnHome"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="164dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/coupe" />
+
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:text="Reset"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/buttonshape"
+                android:id="@+id/btnReset"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

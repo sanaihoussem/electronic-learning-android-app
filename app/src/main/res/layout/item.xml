@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+
+
+            <TextView
+                android:textSize="20dp"
+                android:text="TITRE DE LA QUESTION"
+                android:textStyle="bold|italic"
+                android:id="@+id/Titre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="je ne connais pas les réponses je voudrais savoire ou je pourrais trouver réponse à mes questions difficiles 1- Si on observecertains transitors"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="20dp"
+            />
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center_horizontal"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:id="@+id/ID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/white"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bechir Belkhala"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/userName"
+                android:layout_gravity="bottom"
+                android:paddingLeft="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtDate"
+                android:text="16/02/1996"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="30dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
